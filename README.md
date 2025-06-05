@@ -38,8 +38,10 @@ En el contexto del dataset CIFAR-10: a) ¿Por qué es necesario normalizar los v
 ### RESPUESTA:
 a) Normalización de píxeles al rango [0, 1] 
 La normalización de valores de píxeles de [0, 255] a [0, 1] es necesaria para estabilizar el entrenamiento y mejorar la convergencia. Los valores grandes pueden causar gradientes inestables durante la retropropagación, mientras que los valores normalizados permiten que las funciones de activación (ReLU, sigmoid) trabajen de manera más eficiente. Además, los algoritmos de optimización convergen más rápidamente cuando los datos están en rangos pequeños y uniformes.
+
 b) Formato "one-hot" para etiquetas 
 El formato "one-hot" convierte etiquetas categóricas (0, 1, 2, ..., 9) en vectores binarios donde solo una posición es 1 y el resto son 0. Esto es necesario porque la función softmax en la capa final requiere una neurona por cada clase, y las funciones de pérdida como categorical_crossentropy necesitan este formato para calcular correctamente el error. También permite que la salida represente probabilidades para cada clase, facilitando la interpretación de resultados.
+
 c) Técnicas de Data Augmentation
 Rotación aleatoria: Rota las imágenes en ángulos pequeños (±15°) para que el modelo reconozca objetos independientemente de su orientación, mejorando la robustez ante variaciones de pose. Voltear horizontalmente:
 
