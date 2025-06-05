@@ -1,4 +1,6 @@
 # Parcial-3-IA
+# Presentado Por:
+# Gustavo Fory Mera
 
 ## Pregunta 1 (10 puntos) - Fundamentos de CNN
 Explique qué son las redes neuronales convolucionales (CNN) y por qué son especialmente efectivas para el reconocimiento de imágenes. Mencioné al menos tres características distintivas de las CNN que las hacen superiores a las redes neuronales tradicionales para tareas de visión por computadora.
@@ -88,7 +90,9 @@ Respecto al componente NLP del sistema integrado: a) Explique qué es la lemmati
 
 ### RESPUESTA: 
 a) Lematización: es el proceso de reducir las palabras a su forma base o raíz (llamada "lema"), considerando su contexto gramatical. Por ejemplo, "corriendo", "corrió" y "correrá" se reducen a "correr". Es importante porque permite al sistema tratar diferentes formas de una palabra como una sola entidad, mejorando la comprensión, la búsqueda y el análisis de texto.
+
 b) Patrones de conversación: en el código, los patrones son frases o expresiones predefinidas que usan expresiones regulares o coincidencia de palabras clave para identificar la intención del usuario. Cuando una entrada del usuario coincide con uno de estos patrones, el chatbot asocia dicha entrada a una intención específica y responde con frases programadas para esa intención.
+
 c) Técnicas para mejorar la comprensión del chatbot:
 Uso de modelos de lenguaje avanzados como BERT o GPT para entender el contexto.
 Incorporación de análisis de sentimiento para captar el tono emocional del usuario.
